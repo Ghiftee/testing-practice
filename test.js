@@ -1,4 +1,3 @@
-//Arrange
 const stringLength = require('./string');
 const reverseString = require('./reverse');
 const capitalize = require('./capital');
@@ -6,9 +5,7 @@ const Calculator = require('./calculator');
 const calc = new Calculator();
 
 test('should equal the length of the string', () => {
-  //Act
   const length = stringLength('conditioner');
-  //Assert
   expect(length).toBe(11);
 });
 
@@ -67,10 +64,8 @@ describe('Calculator', () => {
 })
 
 test('should capitalize first character of string', () => {
-  //Act
   const caps = capitalize('conditioner');
   const numCheck = capitalize('100');
-  //Assert
   expect(caps).toBe('Conditioner');
   expect(numCheck).toBe('Enter a letter');
 });
