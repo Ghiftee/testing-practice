@@ -1,12 +1,9 @@
 //Arrange
 const stringLength = require('./string');
 const reverseString = require('./reverse');
+const capitalize = require('./capital');
 const Calculator = require('./calculator');
 const calc = new Calculator();
-
-// test('adds 1 + 2 to equal 3', () => {
-//   expect(sum(1, 2)).toBe(3);
-// });
 
 test('should equal the length of the string', () => {
   //Act
@@ -71,7 +68,9 @@ describe('Calculator', () => {
 
 test('should capitalize first character of string', () => {
   //Act
-  const caps = capitlize('conditioner');
+  const caps = capitalize('conditioner');
+  const numCheck = capitalize('100');
   //Assert
   expect(caps).toBe('Conditioner');
+  expect(numCheck).toBe('Enter a letter');
 });
