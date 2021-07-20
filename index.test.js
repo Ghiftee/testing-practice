@@ -7,3 +7,7 @@ const stringLength = require('./index');
 test('should equal the length of the string', () => {
   expect(stringLength('conditioner')).toBe(11);
 });
+
+test('should be greater than 1 and less than 10', () => {
+  expect(stringLength('hello')).toBe(true);
+});
