@@ -68,3 +68,10 @@ describe('Calculator', () => {
     expect(multiplyResult3).toBe(35);
   })
 })
+
+test('should capitalize first character of string', () => {
+  //Act
+  const caps = capitlize('conditioner');
+  //Assert
+  expect(caps).toBe('Conditioner');
+});
